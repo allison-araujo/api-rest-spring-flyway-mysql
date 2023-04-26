@@ -2,7 +2,7 @@ package io.github.allison.rest.controller;
 
 import java.util.List;
 
-
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,7 +24,7 @@ import io.github.allison.domain.repository.FuelConsumptionRepository;
 @RequestMapping("/v1/consumption")
 public class FuelController {
 
-
+    @Autowired
     private final FuelConsumptionRepository repository;
 
     public FuelController(FuelConsumptionRepository repository){
@@ -38,7 +38,7 @@ public class FuelController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public FuelConsumption save(FuelConsumption fuelConsumption){
+    public FuelConsumption save(@RequestBody FuelConsumption fuelConsumption){          
         
         return repository.save(fuelConsumption);
 
