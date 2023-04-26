@@ -54,7 +54,7 @@ public class FuelConsumption {
 
 
     public void rotate(Integer km) {
-        Double consumerPerKm = 0.3; 
+        Double consumerPerKm = 0.1; 
         Double litersUsed = km * consumerPerKm;
         if (this.liters == 0) {
             System.out.println("Not Fuel Available");
