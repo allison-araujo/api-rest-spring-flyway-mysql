@@ -31,3 +31,15 @@
 "carrier": "lucas",
 "liters": 20
 }
+
+### rodar projeto
+
+### criar uma imagem docker
+
+### docker build --tag test-spring-boot .
+
+### run projeto
+
+### docker run --name backend-java -p 8080:8080 -d test-spring-boot
+
+![test-ok](https://user-images.githubusercontent.com/39178001/234638407-c40d9a9c-e7de-4575-be23-389c3728f8ef.gif)
