@@ -15,8 +15,9 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity
+@Entity(name = "tb_consume")
 @Table(name = "tb_consume")
+
 public class FuelConsumption {
 
     @Id
@@ -31,7 +32,7 @@ public class FuelConsumption {
     private Integer capacity;
 
 
-    private Double liters = 0.0;
+    private Double liters;
 
     
 
