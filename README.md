@@ -1,4 +1,9 @@
-# Teste backend Consumo de Combustivel.
+# API REST COM SPRING BOOT MYSQL E FLYWAY e DOCKER .
+
+Para rodar projeto precisa ter um database criado no mysql chamado fuel.
+após inicializar o flyway cria a migration da table tb_consume.
+
+Dockerfile configurado basta rodar os comando de criação de imagem e rodar o container;
 
 # endpoint
 
